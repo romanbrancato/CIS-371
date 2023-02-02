@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- For Phone Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>CIS 371 Assignment 1</title>
+  <h1>Roman Brancato</h1>
+  <img src="roman.png" alt="Roman" class="roman">
+  <p>This is a photo of me (top left), my younger brother, and my mom in Hawaii</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab placeat eveniet iusto ad? Reiciendis assumenda quos
+    voluptatibus modi, sit laboriosam adipisci unde officiis dignissimos aspernatur nulla, tenetur explicabo aliquid
+    laborum id dolor voluptatem voluptatum, beatae ipsum quas! Excepturi iure quasi laboriosam rem a sed! Ullam ipsam
+    nemo asperiores odit natus. Natus ducimus dolor molestias quasi assumenda culpa, nostrum recusandae error
+    dignissimos rerum libero excepturi ea quia cumque voluptate! Corrupti sint omnis nihil commodi magnam enim vitae
+    optio reprehenderit, aliquid voluptatum, ut dolor provident quibusdam. Omnis suscipit inventore aliquid natus ullam
+    quaerat ipsa at odit illum consequuntur, unde aliquam, recusandae beatae quisquam cumque quos vel nam praesentium
+    officia quam, voluptatem molestiae nulla laborum delectus! Veniam dignissimos suscipit non quis asperiores
+    voluptates nulla expedita facilis repudiandae perspiciatis! Placeat aperiam pariatur harum, doloremque aut et porro
+    perspiciatis fugiat, voluptas temporibus recusandae tempore nisi excepturi veritatis, repudiandae eos at? Libero
+    quisquam similique voluptas. Sunt impedit accusamus, ex, quia pariatur earum eveniet veritatis quam non dignissimos
+    cupiditate, beatae iste in soluta iusto doloremque magni quos aliquid aliquam quo. Voluptate maiores quaerat
+    accusantium eius beatae, amet modi minima? Officiis ullam iure quaerat expedita dolore eum harum similique ex libero
+    eius, totam excepturi ab natus dolorem illo qui maiores ea? Sunt ullam ipsam quibusdam ut iusto recusandae sequi
+    libero, alias blanditiis consequatur dolorum neque beatae soluta molestias perspiciatis nulla dicta! Ipsam labore
+    quos, mollitia corrupti at deserunt eligendi, maiores in provident a nostrum placeat qui facere, ipsa debitis velit
+    commodi ex eos? Maxime, odit doloremque ipsum soluta numquam nesciunt blanditiis ab consectetur, minus dignissimos
+    tempora beatae! Magnam voluptate temporibus aliquid cumque vero molestiae debitis harum doloremque sapiente iure.
+    Rem accusamus dolore distinctio alias doloribus ipsum maiores, commodi officiis at voluptatum quasi assumenda
+    veritatis dolor explicabo vel harum deserunt fuga sequi neque illo, natus repellendus praesentium debitis dolorum.
+    Reprehenderit architecto rerum voluptates est nam facere quos dolorum. Nostrum excepturi dolorem ex aliquam quia
+    perspiciatis saepe explicabo ipsam nesciunt minima eaque voluptatibus obcaecati tempora incidunt laudantium
+    consectetur autem, enim eum amet eligendi numquam. Animi blanditiis obcaecati est nihil veritatis explicabo corporis
+    nemo doloremque vel! Quos, animi eveniet, architecto exercitationem ea dolores laudantium ex iste, quidem repellat
+    dolorum consequatur natus ut quia quis eligendi. Inventore quisquam in, ea voluptatum deserunt architecto quae earum
+    delectus itaque maiores, iste est, nobis ad totam quasi necessitatibus aliquid quis eius impedit ab optio nihil
+    veniam placeat? Obcaecati eligendi at impedit fugiat perspiciatis unde possimus.</p>
+
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 30% 15% 1fr 15%;
+      grid-template-rows: 100px 0.5fr 0.5fr 100px;
+      height: 100vh;
+    }
+
+    .grid-element {
+      outline: 1px solid black;
+    }
+
+    .area1 {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: rgb(169, 169, 169);
+    }
+
+    .area2 {
+      grid-column: 2 / 5;
+      grid-row: 1;
+      background-color: #d4d4d4;
+    }
+
+    .area3 {
+      grid-column: 1;
+      grid-row: 2 / 5;
+      background-color: hsl(0, 0%, 66%);
+    }
+
+    .area4 {
+      grid-column: 2 / 4;
+      grid-row: 2;
+      background-color: lightgray;
+    }
+
+    .area5 {
+      grid-column: 4;
+      grid-row: 2;
+      background-color: darkgray;
+      position: relative;
+    }
+
+    .area6 {
+      grid-column: 2;
+      grid-row: 3;
+      background-color: lightgray;
+    }
+
+    .area7 {
+      grid-column: 3 / 5;
+      grid-row: 3;
+      background-color: darkgray;
+    }
+
+    .area8 {
+      grid-column: 2 / 5;
+      grid-row: 4;
+      background-color: lightgray;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .roman {
+      float: right;
+      width: 300px;
+    }
+
+    .otter {
+      height: 100px;
+      display: flex;
+      margin: auto;
+    }
+
+    .icon {
+      height: 25px;
+      width: 25px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: lightgray;
+    }
+
+    tr:nth-child(odd) {
+      background-color: lightgray;
+    }
+
+    tr:nth-child(even) {
+      background-color: darkgray;
+    }
+
+    tr:hover {
+      background-color: white;
+    }
+
+    .pc {
+      width: 90%;
+      display: flex;
+      margin: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="area1 grid-element">
+      <img src="otter.png" alt="Otter" class="otter">
+    </div>
+    <div class="area2 grid-element">
+      <h1>Roman Brancato</h1>
+      <h2>
+        <i class="fas fa-phone"></i>
+        123-456-7890
+      </h2>
+    </div>
+    <div class="area3 grid-element">
+      <p>I made this site through many hours of googling. I started by first getting the basic layout of the grid using
+        CSS grid. I then added the image of me and the text at the top using the img tag. After I added the picture of
+        an otter, my favorite animal, to the center of area 1 using flex display and auto margin. Area 2 which contains
+        my name and "phone number" used heading 1 and 2 tag and the phone icon was taken from Font Awesome. Section 4 is
+        a table of some of my past classes which was constructed using the table tag + a bit of styling..........The
+        icons at the bottom contain links to their respective website using the "a" tag. </p>
+    </div>
+    <div class="area4 grid-element">
+      <table>
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+          <th>Semester Taken</th>
+        </tr>
+        <tr>
+          <td>CIS 350</td>
+          <td>Software Development</td>
+          <td>Fall 2021</td>
+        </tr>
+        <tr>
+          <td>CIS 263</td>
+          <td>Data Structures and Algorithms</td>
+          <td>Fall 2022</td>
+        </tr>
+        <tr>
+          <td>CIS 241</td>
+          <td>System-level Programming and Utilities</td>
+          <td>Fall 2021</td>
+        </tr>
+        <tr>
+          <td>CIS 353</td>
+          <td>Database</td>
+          <td>Winter 2022</td>
+        </tr>
+      </table>
+    </div>
+    <div class="area5 grid-element">
+      <img src="pc.png" alt="Computer" class="pc">
+    </div>
+    <div class="area6 grid-element">
+      <ul>
+        <li><a href="https://www.amazon.com">AMZ</a></li>
+        <li><a href="https://www.google.com">GOG</a></li>
+      </ul>
+    </div>
+    <div class="area7 grid-element">
+      <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing elit. Proin at tristique</b> tellus, id congue
+        nisl. Nullam non nisi <code>vel nibh bibendum laoreet non ut odio. Sed pellentesque nisl id mauris congue aliquet.
+        Curabitur ac varius</code> nisl quis nisi blandit malesuada.</p>
+
+      <p>Vivamus at libero vel libero <b>bibendum</b> tincidunt id id nulla. Sed <i>ultricies purus vel dui
+          ullamcorper, ut dapibus lectus dictum.</i> Quisque euismod elit eget elit tempor, in <code>porttitor sapien rutrum. Fusce
+        id fringilla</code> velit, quis dictum mi. In hac habitasse platea dictumst.</p>
+
+      <p>Donec euismod varius risus vel molestie. <b>Praesent aliquam varius velit, id congue nisi auctor</b> eget.
+        Integer consectetur, <i>magna non placerat congue, nisi odio</i> fermentum metus, eu commodo erat massa a
+        libero. Curabitur <code>sollicitudin varius</code> metus quis risus tincidunt congue.</p>
+    </div>
+    <div class="area8 grid-element">
+      <a href="https://twitter.com">
+        <img src="twitter.png" alt="Twitter" class="icon">
+      </a>
+      <a href="https://facebook.com">
+        <img src="facebook.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="instagram.png" alt="Instagram" class="icon">
+      </a>
+      <a href="https://github.com">
+        <img src="github.png" alt="GitHub" class="icon">
+      </a>
+      <a href="https://discord.com">
+        <img src="discord.png" alt="Discord" class="icon">
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
