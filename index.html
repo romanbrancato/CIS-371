@@ -113,11 +113,6 @@
       margin: auto;
     }
 
-    .icon {
-      height: 25px;
-      width: 25px;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -156,6 +151,7 @@
       transform: translate(-50%, -50%);
     }
   </style>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -183,44 +179,17 @@
         stylizes the text using b, code, and i tags to bold, code block, and italicize respectively. Lastly, the icons
         at the bottom contain links to their respective website using the "a" tag with the img tag. </p>
     </div>
-    <div class="area4 grid-element">
-      <table>
-        <tr>
-          <th>Course Number</th>
-          <th>Course Name</th>
-          <th>Semester Taken</th>
-        </tr>
-        <tr>
-          <td>CIS 350</td>
-          <td>Software Development</td>
-          <td>Fall 2021</td>
-        </tr>
-        <tr>
-          <td>CIS 263</td>
-          <td>Data Structures and Algorithms</td>
-          <td>Fall 2022</td>
-        </tr>
-        <tr>
-          <td>CIS 241</td>
-          <td>System-level Programming and Utilities</td>
-          <td>Fall 2021</td>
-        </tr>
-        <tr>
-          <td>CIS 353</td>
-          <td>Database</td>
-          <td>Winter 2022</td>
-        </tr>
-      </table>
-    </div>
+
+    <div id="area4-table"></div>
+
     <div class="area5 grid-element">
       <img src="pc.png" alt="Computer" class="pc">
     </div>
+
     <div class="area6 grid-element">
-      <ul>
-        <li><a href="https://www.amazon.com">AMZ</a></li>
-        <li><a href="https://www.google.com">GOG</a></li>
-      </ul>
+      <div id="area6-list"></div>
     </div>
+
     <div class="area7 grid-element">
       <p>Lorem ipsum dolor sit amet, consectetur <b>adipiscing elit. Proin at tristique</b> tellus, id congue
         nisl. Nullam non nisi <code>vel nibh bibendum laoreet non ut odio. Sed pellentesque nisl id mauris congue aliquet.
@@ -234,24 +203,14 @@
         Integer consectetur, <i>magna non placerat congue, nisi odio</i> fermentum metus, eu commodo erat massa a
         libero. Curabitur <code>sollicitudin varius</code> metus quis risus tincidunt congue.</p>
     </div>
+
     <div class="area8 grid-element">
-      <a href="https://twitter.com">
-        <img src="twitter.png" alt="Twitter" class="icon">
-      </a>
-      <a href="https://facebook.com">
-        <img src="facebook.png" alt="Facebook" class="icon">
-      </a>
-      <a href="https://instagram.com">
-        <img src="instagram.png" alt="Instagram" class="icon">
-      </a>
-      <a href="https://github.com">
-        <img src="github.png" alt="GitHub" class="icon">
-      </a>
-      <a href="https://discord.com">
-        <img src="discord.png" alt="Discord" class="icon">
-      </a>
+      <div id="area8-list"></div>
     </div>
   </div>
+
+  <script type="text/babel" src="mycode.ts" />
+
 </body>
 
 </html>
